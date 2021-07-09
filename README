@@ -1,0 +1,15 @@
+TAG README
+
+Tag is intended as the simplest possible implmentation of a MVC type simulation while still being interesting. 
+
+Model:
+	Players (2D position, it/not-it)
+			constant size
+			
+View:
+	2D top view
+	Cursor coordinate position
+	
+Controller:
+	Click a player: show player state
+	Double-click a player: Set view to follow, control with arrow keys
