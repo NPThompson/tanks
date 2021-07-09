@@ -1,15 +1,4 @@
-TAG README
+Tanks README
 
-Tag is intended as the simplest possible implmentation of a MVC type simulation while still being interesting. 
+Tanks is a fun little competitive party game. Up to four tanks battle to the death with each other. When a winner is decided, the next round begins.
 
-Model:
-	Players (2D position, it/not-it)
-			constant size
-			
-View:
-	2D top view
-	Cursor coordinate position
-	
-Controller:
-	Click a player: show player state
-	Double-click a player: Set view to follow, control with arrow keys
