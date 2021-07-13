@@ -41,10 +41,10 @@ bool EditorController::run()
 		if(KeyDown(LEFT))
 			selectedTank->turnTrack(1.0);
 
-		if(KeyDown(A))
+		if(KeyDown(D))
 			selectedTank->turnTurret(-1.0);
 
-		if(KeyDown(D))
+		if(KeyDown(A))
 			selectedTank->turnTurret(1.0);
 		
 		if(KeyDown(UP))

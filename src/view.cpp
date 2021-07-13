@@ -22,8 +22,8 @@ View::View(const char* title, coord size, float scale):
 }
 		
 
-		
-void View::show (Object* theObject)
+// shows the data in a minimalist style, using only lines
+void View::showOutlines (Object* theObject)
 {
 	Tank* theTank = (Tank*)theObject;
 
@@ -37,6 +37,14 @@ void View::show (Object* theObject)
 	// draw tracks
 	mainWindow.drawRect (theTank->getPosition(), point(10,35), theTank->getTrackHeading());
 }
+
+
+// shows the model using animated sprite graphics, loaded from file
+void View::showAnimated (Object* theObject)
+{
+	// mainWindow.drawSprite (...)
+}
+
 
 
 void View::show (Model& theModel)

@@ -1,4 +1,43 @@
 Tanks README
 
-Tanks is a fun little competitive party game. Up to four tanks battle to the death with each other. When a winner is decided, the next round begins.
 
+
+Informal Requirements 0.1
+
+
+
+Control
+	The State is initialized with two tanks and some walls
+	The Tanks are controlled by two different players
+	When only one player is left alive, the winner is declared and the game is reset
+	Press escape or the exit button to quit the game
+
+Logic
+	The game proceeds in real time
+	each slice of time is called a frame, and should be somewhere between 1/30 and 1/60 a second in duration
+	
+Types of Objects
+				Move	Controllable	Destructible
+	Tanks		X		X				X
+	Bullets		X		.				X
+	Walls		.		.				.
+	
+Collisions
+	Bullets are destroyed on touching walls or tanks
+	Tanks take damage on touching bullets
+	Tanks cannot occupy the same space as other tanks or walls
+	
+Graphics
+	Hitboxes and indications of heading can be seen as colored lines by using the debug view
+	Simple animated bitmap graphics for walls, tanks, and bullets can be seen by using the animated view
+		The Tank treads should alternate between two images to make it appear the treads are turning
+		The Tank turret should show recoil when the cannon is fired
+		Both should rotate to match their heading
+		Bullets and walls each have a single image
+		
+Audio
+	A sound should play whenever:
+		A bullet is fired
+		A bullet strikes a tank or wall
+		A tank strikes a tank or wall
+		A tank is destroyed

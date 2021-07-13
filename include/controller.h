@@ -8,6 +8,11 @@
 
 
 
+// The EditorController lets you:
+// 	select objects by clicking on them
+//  play as the selected object
+//  move the selected object around by dragging
+
 class EditorController
 {
 	public:

@@ -12,6 +12,7 @@
 #include<SDL2/SDL_ttf.h>
 
 
+
 class Window
 {
 	public:
